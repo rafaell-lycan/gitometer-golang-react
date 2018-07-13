@@ -8,7 +8,7 @@ const Heading = props =>
       <br />
       <h1 className="up-header">
         <code>
-          <a href={props.url}>
+          <a href={props.url} target="repository">
             {props.name}
           </a>
         </code>

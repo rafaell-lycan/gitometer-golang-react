@@ -7,9 +7,9 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/flaviocopes/gitometer/server/common"
-	"github.com/flaviocopes/gitometer/server/db"
-	"github.com/flaviocopes/gitometer/server/github"
+	"./common"
+	"./db"
+	"./github"
 )
 
 func corsHandler(h http.Handler) http.HandlerFunc {

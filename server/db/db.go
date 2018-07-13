@@ -9,7 +9,7 @@ import (
 	// Postgres drivers
 	_ "github.com/lib/pq"
 
-	"github.com/flaviocopes/gitometer/server/common"
+	"../common"
 )
 
 const (

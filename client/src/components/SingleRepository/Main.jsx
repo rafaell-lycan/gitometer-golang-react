@@ -23,6 +23,8 @@ class SingleRepository extends Component {
   render() {
     const data = this.props.data
 
+    console.log('SingleRepo', data)
+
     if (!data) {
       return (
         <div>
@@ -31,7 +33,7 @@ class SingleRepository extends Component {
       )
     }
 
-    const url = 'https://github.com/{data.repository.owner}/{data.repository.name}'
+    const url = `https://github.com/${data.repository.owner}/${data.repository.name}`
     let starsPerMonth = {
       labels: null,
       data_summed: null,
